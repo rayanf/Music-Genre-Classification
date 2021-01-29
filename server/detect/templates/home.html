@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+
+{% load static %}
+
+{% block content %}
+<html lang="en" dir="ltr">
+  <head>
+
+
+    <title>music classification</title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="window.location.href = 'http://127.0.0.1:8000/users/logout'">logout</button>
+<br><br>
+    <form class="" action="/detect/detect  " method="POST" enctype="multipart/form-data" style="width : 250px">{% csrf_token %}
+      <fieldset>
+        <legend>upload your file</legend>
+
+        <label for="file">Select a file:</label>
+        <br><br>
+        <input type="file" id="file" name="file">
+        <br><br>
+        <input type="submit" name="submit" value="submit"><br>
+
+
+      </fieldset>
+    </form>
+
+
+
+  </body>
+</html>
+{% endblock %}
