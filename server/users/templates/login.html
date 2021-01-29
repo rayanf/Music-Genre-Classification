@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LOGIN</title>
+
+  </head>
+  <body>
+      <form class="" action="" method="POST" style="width : 250px">{% csrf_token %}
+        <fieldset>
+          <legend>Login</legend>
+
+          <label for="username">Username:</label><br>
+          &emsp; <input type="text" name="username" value="rayanf" id="username"> <br><br>
+
+          <label for="password">Password:</label><br>
+          &emsp; <input type="password" name="password" value="rayanforsat1379"><br><br>
+
+          <input type="submit" name="login" value="LOGIN"><br>
+
+        </fieldset>
+      </form>
+      <form class="" action="/users/signin" method="POST" style="width : 250px">{% csrf_token %}
+        <fieldset>
+          <legend>SIGNIN</legend>
+            <label for="first_name_signin">firstname</label><br>
+            <input type="text" name="first_name_signin" value="" id="first_name_signin">
+<br><br>
+            <label for="last_name_signin">lastname</label><br>
+            <input type="text" name="last_name_signin" value="" id="last_name_signin">
+<br><br>
+            <label for="username_signin">username</label><br>
+            <input type="text" name="username_signin" value="" id="username_signin">
+<br><br>
+            <label for="password_signin">password</label><br>
+            <input type="password" name="password_signin" value="" id="password_signin">
+<br><br>
+            <input type="submit" name="signin" value="signin">
+
+        </fieldset>
+      </form>
+  </body>
+</html>
